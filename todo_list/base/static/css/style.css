@@ -1,0 +1,110 @@
+.container_list_todo{
+    max-width: 580px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 2px #ff000078;
+    border: 1px solid #ff8989;
+    border-radius: 10px;
+}
+
+.header_list_todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    padding: 3px 10px;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgb(255 71 71));
+    border-radius: 10px 0px 0px;
+}
+
+.header_list_todo h1{
+    color: #ffffff;
+}
+
+.btn_todo{
+    color: #ffffff;
+    transition: 0.4s;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #a52a2a36;
+}
+
+.btn_todo:hover{
+    color: #83000078;
+}
+
+.search_form{
+    padding: 10px;
+}
+
+.btn_search_todo{
+    border: none;
+    color: #ff9c9c;
+    background: white;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-left: 0px !important;
+    border: 1px solid #ff9c9c;
+}
+
+.btn_search_todo:hover{
+    color: #ffffff;
+    background-color: #a52a2a36;
+    border: 1px solid #38a52a36;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0.25rem #ff9c9c !important;
+    border: 1px solid rgb(255, 53, 53) !important;
+}
+
+.task-complete span{
+    color: rgb(0 193 6);
+    text-decoration: underline;
+}
+
+.form_todos{
+    padding: 10px;
+}
+
+.btn_todos {
+    background: #ffa8a8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 13px;
+    color: #525252;
+    font-weight: bold;
+}
+
+.form_todos p label{
+    display: inline-block;
+}
+
+.form_todos p #id_title, .form_todos p #id_description, 
+.form_todos p #id_username, .form_todos p #id_password,
+.form_todos p #id_username, .form_todos p #id_password1,
+.form_todos p #id_password2{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form_todos p #id_description{
+    line-height: 0.5;
+}
+
+.container_delete_todo{
+    padding: 10px;
+}

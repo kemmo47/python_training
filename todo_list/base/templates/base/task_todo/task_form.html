@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+{% block content %}
+    <div class="container_list_todo my-4">
+        <div class="header_list_todo">
+            <h2>Task Form</h2>
+            <a href="{% url 'tasks' %}" class="text-decoration-none"><i class="icofont-arrow-left"></i> Go back</a>
+        </div>
+
+        <form action="" method="POST" class="form_todos my-3">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn_todos" value="submit">
+        </form>
+    </div>
+{% endblock content %}

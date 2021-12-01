@@ -1,0 +1,12 @@
+{% extends 'base/main.html' %}
+{% block content %}
+    <div class="container_list_todo container_delete_todo my-4">
+        <a href="{% url 'tasks' %}"><i class="icofont-arrow-left"></i> Go back</a>
+
+        <form method="POST">
+            {% csrf_token %}
+            <p>Bạn có chắc muốn xóa task này? "{{task}}"</p>
+            <input type="submit" class="btn_todos" value="delete" >
+        </form>
+    </div>
+{% endblock content %}

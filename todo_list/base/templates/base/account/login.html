@@ -1,0 +1,13 @@
+{% extends 'base/main.html' %}
+{% block content %}
+    <div class="container_list_todo my-4 p-3">
+        <h1 class="text-center">Login</h1>
+        <form method="POST" class="form_todos">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Login" class="btn_todos">
+        </form>
+
+        <p class="my-4">Bạn chưa có tài khoản? <a href="{% url 'register' %}">Đăng ký ngay</a></p>
+    </div>
+{% endblock content %}
